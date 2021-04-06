@@ -4,7 +4,7 @@ Ejecutar el .jar para arracan el api.
 
 Abrir un cmd
 
-java -jar 
+java -jar order-api-1.0.0.jar
 
 
 Acceder a Swagger para ver la documentacion del api y los servicios
