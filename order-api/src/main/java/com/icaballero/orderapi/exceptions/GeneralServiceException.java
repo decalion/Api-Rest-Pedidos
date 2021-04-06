@@ -1,0 +1,48 @@
+package com.icaballero.orderapi.exceptions;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.ResponseStatus;
+
+
+/**
+ * Excepcion Generica
+ * @author Ismael Caballero
+ *
+ */
+@ResponseStatus(code = HttpStatus.INTERNAL_SERVER_ERROR)
+public class GeneralServiceException extends RuntimeException {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 7624036142306926342L;
+
+	public GeneralServiceException() {
+		super();
+		
+	}
+
+	public GeneralServiceException(String message, Throwable cause, boolean enableSuppression,
+			boolean writableStackTrace) {
+		super(message, cause, enableSuppression, writableStackTrace);
+		
+	}
+
+	public GeneralServiceException(String message, Throwable cause) {
+		super(message, cause);
+		
+	}
+
+	public GeneralServiceException(String message) {
+		super(message);
+		
+	}
+
+	public GeneralServiceException(Throwable cause) {
+		super(cause);
+		
+	}
+	
+	
+
+}
